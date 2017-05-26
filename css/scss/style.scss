@@ -1,0 +1,59 @@
+$set-border: 1px solid black;
+
+* {
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+}
+.container {
+	height: 309px;
+	width: 309px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	&:after {
+		content: "";
+		visibility: hidden;
+	}
+
+	div {
+		height: 100px;
+		width: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#box-1 {
+		border-right: $set-border;
+		border-bottom: $set-border;
+	}
+
+	#box-3 {
+		border-left: $set-border;
+		border-bottom: $set-border;
+	}
+
+	#box-5 {
+		border: $set-border;
+	}
+
+	#box-7 {
+		border-right: $set-border;
+		border-top: $set-border;
+	}
+
+	#box-9 {
+		border-left: $set-border;
+		border-top: $set-border;
+	}
+}
+
+.cell {
+	font-size: 60px;
+}

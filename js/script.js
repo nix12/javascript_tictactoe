@@ -10,7 +10,6 @@ var victory = [[1, 2, 3],
 							 [1, 5, 9],
 							 [3, 5, 7]];
 
-
 game = {
 	checkForWin: function(player) {
 		var player;
@@ -45,9 +44,9 @@ game = {
 }
 
 $(function() {
-	$(".cell").on("click", function() {
+	$(".cell").one("click", function() {
 		if (turn % 2 === 0) {
-			$(this).html("x");
+			$(this).html("X");
 			player1.push($(this).data("value"));
 		} else {
 			$(this).html("0");
